@@ -67,7 +67,7 @@ The MVP of this project will be broken up between 2 stages. Follow each step and
 - [ ] Set the data you fetch to state.
 - [ ] Map over the list and render a component for each character on the page.
 - [ ] You must have at least one element for each star wars character in the data set.
-- [ ] The elements must be styled with either SemanticUI or styled-components - don't rely on browser default styles.
+- [ ] The elements must be styled with either Reactstrap or MaterialUI - don't rely on browser default styles.
 
 ### Stage 2
 
@@ -76,7 +76,7 @@ Add a Router to this application by using React Router.
 - [ ] You'll start by wrapping your `root` component in the `Router` component.
 - [ ] Declare your routes with `Route`.
 - [ ] Then make it so you can navigate to your routes using `Link`.
-- [ ] Create two `routes` in your `App` component, one at `'/'` for your `Home` component,and one at `/films` for your Star War movies.
+- [ ] Create three `routes` in your `App` component, one at `'/'` for your `Home` component,and one at `/films` for your Star War movies and `/people` for Star War characters.
 - [ ] Then in your `App` component, create a nav bar that will use `Link` to route to your different pages.
 
 
