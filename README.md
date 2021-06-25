@@ -1,6 +1,6 @@
 # Sprint Project: Star Wars API
 
-This Project allows you to practice the concepts and techniques learned over the past Sprint and apply them in a concrete project. This Sprint explored ReactJS, Function Components, component state and side effects. In your Project for this Sprint, you will demonstrate proficiency by creating an application that uses ReactJS to consume live data retrieved from the World Wide Web and style that data nicely on the page.
+This Project allows you to practice the concepts and techniques learned over the past Sprint and apply them in a concrete project. This Sprint explored ReactJS, Function Components, component state, side effects and React Router. In your Project for this Sprint, you will demonstrate proficiency by creating an application that uses ReactJS to consume live data retrieved from the World Wide Web and style that data nicely on the page.
 
 ## Instructions
 
@@ -8,9 +8,9 @@ This Project allows you to practice the concepts and techniques learned over the
 
 This is an individual assessment. All work must be your own. Your Project score is a measure of your ability to work independently using the material covered through this sprint. You need to demonstrate proficiency in the concepts and objectives introduced and practiced in preceding days.
 
-You are not allowed to collaborate during the Sprint Project. However, you are encouraged to follow the twenty-minute rule and seek support from your PM and Instructor in your cohort help channel on Slack. Your work reflects your proficiency ReactJS Fundamentals and your command of the concepts and techniques in the Function Components and Class Components.
+You are not allowed to collaborate during the Sprint Project. However, you are encouraged to follow the twenty-minute rule and seek support from your instructor in your cohort help channel on Slack. Your work reflects your proficiency ReactJS Fundamentals and your command of the concepts and techniques in the Function Components and Class Components.
 
-You have three hours to complete this Project. Plan your time accordingly.
+You have 2 days to complete this Project. Plan your time accordingly.
 
 ## Commits
 
@@ -39,7 +39,7 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 Follow these steps to set up and work on your project:
 
 - [ ] Create a forked copy of this project.
-- [ ] Add PM as collaborator on Github.
+- [ ] Add Instructor as collaborator on Github.
 - [ ] Clone your OWN version of Repo. **(Not Gabi's by mistake!)**
 - [ ] Create a new Branch locally: `git checkout -b <firstName-lastName>`.
 - [ ] Change directories into `./starwars` (`cd starwars`) and run `yarn install` or `npm install` to retrieve all needed dependencies.
@@ -52,8 +52,8 @@ Follow these steps for completing your project.
 Follow these steps for completing your project:
 
 - [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo).
-- [ ] Add your Project Manager as a Reviewer on the Pull-request.
-- [ ] PM then will count the HW as done by merging the branch back into master.
+- [ ] Add your instructor as a Reviewer on the Pull-request.
+- [ ] PM then will count the HW as done by merging the branch back into main.
 
 
 ## Minimum Viable Product
@@ -66,14 +66,17 @@ The MVP of this project will be broken up between 2 stages. Follow each step and
 - [ ] Follow the documentation to learn how to fetch a list of "people". However, don't spend _too_ long on this. Here is a link for you to follow if you've looked around the docs for about 15 minutes or so and haven't found where to go - [Secret Link to Awesomeness 🤫](https://swapi.dev/documentation).
 - [ ] Set the data you fetch to state.
 - [ ] Map over the list and render a component for each character on the page.
-- [ ] You must have at least one element for each star wars character in the data set.
+- [ ] Do the same thing for Star Wars films.
+- [ ] You must have at least one element for each star wars character or film in the data set.
 - [ ] The elements must be styled with either Reactstrap or MaterialUI - don't rely on browser default styles.
 
 ### Stage 2
 
 Add a Router to this application by using React Router.
-
+  
+- [ ] Install React Router Dom using this command `npm install react-router-dom`.
 - [ ] You'll start by wrapping your `root` component in the `Router` component.
+- [ ] Declare your routes with `Route`.
 - [ ] Declare your routes with `Route`.
 - [ ] Then make it so you can navigate to your routes using `Link`.
 - [ ] Create three `routes` in your `App` component, one at `'/'` for your `Home` component,and one at `/films` for your Star War movies and `/people` for Star War characters.
@@ -93,9 +96,7 @@ It is better to submit a Project that meets [MVP](https://en.wikipedia.org/wiki/
 
 ## Stretch Problems
 
-- [ ] Add at least one test using a testing tool:
-  - [react-testing-library](https://github.com/testing-library/react-testing-library#basic-example)
-  - [Cypress](https://docs.cypress.io/guides/overview/why-cypress.html)
+- [ ] Add new route which allows you to view more information about a film or/and a character
 
 - [ ] Build a pagination system that will allow you to load the next page of data.
   - `console.log()` the data coming back from the server.
