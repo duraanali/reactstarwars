@@ -77,7 +77,7 @@ Add a Router to this application by using React Router.
 - [ ] Declare your routes with `Route`.
 - [ ] Then make it so you can navigate to your routes using `Link`.
 - [ ] Create two `routes` in your `App` component, one at `'/'` for your `Home` component,and one at `/films` for your Star War movies.
-- [ ] Then in your `App` component, create a nav bar that will use `NavLink` to route to your different pages.
+- [ ] Then in your `App` component, create a nav bar that will use `Link` to route to your different pages.
 
 
 #### Required best practices:
