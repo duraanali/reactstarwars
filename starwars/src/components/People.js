@@ -1,29 +1,43 @@
-import React from 'react';
+import React,{useState} from 'react';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
-import Home from './Home';
+import {Button}  from '@material-ui/core';
+import '../index.css'
 import './StarWars.css'
+import { Link } from 'react-router-dom';
 
 function People(props){
    const { people } = props
+   const {btn } = props
 
-   // console.log(people)
+// console.log(btn);
 
    if(!people){
       return <div>Loading movie information...</div>;
    }
 
+   // {btn.map(Link => (
+   //    <div>
+   //      return link
+   //    </div>
+   // ))}
+
+   // function handle(){
+   
+   // }
+
    return(
    <div>
-   <Typography className='text-center fs-1 my-4'>PEOPLE</Typography>
-   <div className='d-flex justify-content-between  flex-wrap container align-items-center mt-5 mb-5 '>
-     
+   <Typography className=' text-center fs-1 my-4'>PEOPLE</Typography>
+   <div className='d-flex justify-content-between  flex-wrap container align-items-center mt-5 mb-5  '>
+
     {people.map( person => (
-       <Card className='card text-start shadow-lg card-color mb-3 card-effect' style={{width:22 +'rem'}}>
+     <div>
+       <Card className='card text-start shadow-lg card-color mb-3 card-effect  zindex' style={{width:22 +'rem'}}>
         <CardContent>
             <Typography className='fs-6 '>
-               <b>Name :</b> <span>{person.name}</span> 
+               <b>Name :</b> <span>{person.next}</span> 
             </Typography>
 
             <Typography >
@@ -49,17 +63,19 @@ function People(props){
             <Typography >
             <b>Eye Color :</b>  <span> {person.eye_color} </span>
             </Typography>
-          
                      
          </CardContent>
+
       </Card> 
+
+     </div>
+      
     ))}
-     
-
    </div>
-   </div>
-
+      <Button className='shadow'>next</Button>
  
+   </div>
+
    )
 }
 

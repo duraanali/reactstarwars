@@ -38,6 +38,14 @@ function People(props){
             <b>producer :</b> <span> {film.producer}cm</span>
             </Typography>
           
+            <Typography >
+            <b>Created :</b> <span> {film.created}</span>
+            </Typography>
+          
+            <Typography >
+            <b>Edited :</b> <span> {film.edited}</span>
+            </Typography>
+          
                      
          </CardContent>
       </Card> 
