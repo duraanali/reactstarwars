@@ -16,12 +16,11 @@ function People(props){
 
    return(
    <div>
-      <Home/>
-
-      <div className='d-flex justify-content-betweeb  flex-wrap container align-items-center mt-5 mb-5'>
+   <Typography className='text-center fs-1 my-4'>PEOPLE</Typography>
+   <div className='d-flex justify-content-between  flex-wrap container align-items-center mt-5 mb-5 '>
      
     {people.map( person => (
-       <Card className='card text-start shadow-lg card-color mb-3 mx-2 card-effect' style={{width:18 +'rem'}}>
+       <Card className='card text-start shadow-lg card-color mb-3 card-effect' style={{width:22 +'rem'}}>
         <CardContent>
             <Typography className='fs-6 '>
                <b>Name :</b> <span>{person.name}</span> 
@@ -59,6 +58,7 @@ function People(props){
 
    </div>
    </div>
+
  
    )
 }

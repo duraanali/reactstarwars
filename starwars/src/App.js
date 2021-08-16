@@ -3,8 +3,9 @@ import './App.css';
 import axios from 'axios'
 import People from './components/People'
 import Film from './components/Film';
-import { Switch,Route } from 'react-router-dom';
+import { Switch,Route,Link } from 'react-router-dom';
 import Home from './components/Home';
+import { Typography } from '@material-ui/core';
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
   // the state properties here.
@@ -48,7 +49,19 @@ const App = () => {
 
   return (
     <div>
+         <div className="d-flex shadow">
+            <div  className='col-9'>
+            <Typography className="my-4 fs-2 ms-5" >React Wars</Typography>
+            </div>
 
+            <nav className='col-3 d-flex my-4 fs-5'>
+                 <Link to='/' className='nav-link'>Home</Link>
+                 <Link to='/People' className='nav-link'>People</Link>
+                 <Link to='/Film'className='nav-link'>Film</Link>
+                
+            </nav>
+ 
+          </div>
       
          
       <Switch>
