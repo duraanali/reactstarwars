@@ -18,3 +18,7 @@
   padding: 7rem 0;
   margin-top: -5rem;
 }
+.title{
+  transform: translateY(25vh);
+  letter-spacing: 14px !important;
+}

@@ -1,4 +1,4 @@
-import { Typography } from '@material-ui/core';
+import { Button, Typography,H } from '@material-ui/core';
 import React from 'react'
 import '../index.css'
 function Home(){
@@ -7,7 +7,9 @@ function Home(){
         <div>
 
             <div className='App'>
-            
+             <Typography className='fs-1 title'>
+                 Reat Star War
+             </Typography>
             </div>
 
             <div className='info'>
