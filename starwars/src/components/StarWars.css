@@ -1,0 +1,6 @@
+.card-effect:hover{
+    transform: scale(1.09);
+}
+.font-card{
+    font-size: .8rem !important;
+}
