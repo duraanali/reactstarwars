@@ -1,6 +1,7 @@
-import { Button, Typography,H } from '@material-ui/core';
+import {Typography} from '@material-ui/core';
 import React from 'react'
 import '../index.css'
+
 function Home(){
 
     return(
@@ -27,7 +28,7 @@ function Home(){
                 Open up a terminal and use curl or httpie to make an API request for a resource. In the example below, we're trying to get the first planet, Tatooine: 
                 </Typography>   
 
-               <Typography className='my-3  shadow fs-5'>http swapi.dev/api/planets/1/ </Typography> 
+               <Typography className='my-3 ps-4 col-4 shadow fs-5'>http swapi.dev/api/planets/1/ </Typography> 
 
                <Typography>
                We'll use httpie for our examples as it displays responses nicely and gives us a whole lot more useful information. If you don't want to download httpie, just use the curl command instead.

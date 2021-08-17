@@ -6,12 +6,12 @@ import Film from './components/Film';
 import { Switch,Route,Link } from 'react-router-dom';
 import Home from './components/Home';
 import { Typography } from '@material-ui/core';
+
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
   // the state properties here.
   const [people,setPeople] = useState([]);
   const [films,setFilms] = useState([]);
-  const [btns,setFBtns] =useState([])
   // console.log(people);
   // Fetch charactersn and films from the star wars api in an effect hook. Remember, anytime you have a 
   // side effect in a component, you want to think about which state and/or props it should
@@ -24,7 +24,7 @@ const App = () => {
    .then( res => {
     //  console.log(res.data)
      setPeople(res.data.results);
-     setFBtns(res.data);
+  
     }).catch(error => {
       console.error();
     })
@@ -68,7 +68,7 @@ const App = () => {
          
       <Switch>
        <Route path='/People'>
-       <People people={people} btn={btns}/>
+       <People people={people}/>
        </Route>
 
        <Route path='/Film'>
@@ -78,6 +78,8 @@ const App = () => {
        <Route path='/'>
        <Home/>
        </Route>
+
+      
 
       </Switch>
 

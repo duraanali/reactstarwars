@@ -1,14 +1,17 @@
 import React from 'react';
+
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
-import Home from './Home';
 import Typography from '@material-ui/core/Typography';
+import ViewMore from './ViewMore';
 import './StarWars.css'
+import { Link,Route,useParams} from 'react-router-dom';
 
 function People(props){
    const { films } = props
 
    // console.log(people)
+
 
    if(!films){
       return <div>Loading movie information...</div>;
@@ -19,6 +22,7 @@ function People(props){
       
   <Typography className='text-center fs-1 my-4'>FILMS</Typography>
    <div className='d-flex justify-content-betweeb  flex-wrap container align-items-center mb-5 mt-5'>
+
     {films.map( film => (
        <Card className='card text-start shadow-lg card-color mb-3 mx-2 card-effect' style={{width:22 +'rem'}}>
         <CardContent>
@@ -48,6 +52,15 @@ function People(props){
           
                      
          </CardContent>
+         <Route path='/Film/ViewMore'>
+         <ViewMore view={film }/>
+         </Route>
+         <Link to='/Film/ViewMore'>
+         <button className='col-4 btn btn-dark VeiwMore-btn my-2'>
+            View More
+         </button>
+         </Link>
+        
       </Card> 
     ))}
      
