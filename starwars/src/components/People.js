@@ -2,14 +2,12 @@ import React from 'react';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
-import {Button}  from '@material-ui/core';
 import '../index.css'
 import './StarWars.css'
 
 
 function People(props){
    const { people } = props
-
 
 
    if(!people){
@@ -19,10 +17,20 @@ function People(props){
 
    return(
    <div>
+
+    {/* TITLE  */}
    <Typography className=' text-center fs-1 my-4'>PEOPLE</Typography>
-   <div className='d-flex justify-content-between  flex-wrap container align-items-center mt-5 mb-5  '>
+
+   {/* CONTAINER PEOPLE */}
+   <div className='d-flex justify-content-between  flex-wrap container align-items-center mt-5 mb-5  Cards'>
+
+      {/* LOOP API PROPS  */}
+
     {people.map( person => (
      <div>
+
+      {/* EACH PEOPLE CARD  */}
+
        <Card className='card text-start shadow-lg card-color mb-3 card-effect  zindex' style={{width:22 +'rem'}} >
         <CardContent>
             <Typography className='fs-6 '>
@@ -60,8 +68,9 @@ function People(props){
      </div>
       
     ))}
+    
    </div>
-      <Button className='shadow'>next</Button>
+      {/* <Button className='shadow'>next</Button> */}
  
    </div>
 

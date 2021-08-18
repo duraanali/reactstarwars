@@ -21,7 +21,7 @@ function People(props){
    <div>
       
   <Typography className='text-center fs-1 my-4'>FILMS</Typography>
-   <div className='d-flex justify-content-betweeb  flex-wrap container align-items-center mb-5 mt-5'>
+   <div className='d-flex justify-content-betweeb  flex-wrap container align-items-center mb-5 mt-5 Cards'>
 
     {films.map( film => (
        <Card className='card text-start shadow-lg card-color mb-3 mx-2 card-effect' style={{width:22 +'rem'}}>

@@ -7,3 +7,10 @@
 .VeiwMore-btn{
   margin: auto 6rem;
 }
+
+@media (max-width:600px) {
+  .Cards{
+    justify-content: center !important;
+  }
+}
+
