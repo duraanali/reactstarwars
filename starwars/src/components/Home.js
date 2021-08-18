@@ -6,12 +6,14 @@ function Home(){
 
     return(
         <div>
-
+         {/* HERO IMAGE ANT PRIMARY HEADER  */}
             <div className='App'>
              <Typography className='fs-1 title'>
                  Reat Star War
              </Typography>
             </div>
+        
+        {/* INFORMATION ABOUT API  FROM HIS WEBSITE */}
 
             <div className='info'>
             <div  className='container '>

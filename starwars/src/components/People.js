@@ -11,7 +11,7 @@ function People(props){
 
 
    if(!people){
-      return <div>Loading movie information...</div>;
+      return <div>Loading PEOPLE information...</div>;
    }
 
 
@@ -34,7 +34,7 @@ function People(props){
        <Card className='card text-start shadow-lg card-color mb-3 card-effect  zindex' style={{width:22 +'rem'}} >
         <CardContent>
             <Typography className='fs-6 '>
-               <b>Name :</b> <span>{person.next}</span> 
+               <b>Name :</b> <span>{person.name}</span> 
             </Typography>
 
             <Typography >

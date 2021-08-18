@@ -20,6 +20,7 @@ const App = () => {
   // sync up with, if any.
 
  useEffect(() => {
+   
  const  getPeople = () => {
     axios
     .get('https://swapi.dev/api/people/?format=json')
